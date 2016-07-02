@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+   <html>
+  <head>
+      <title>Contact</title>
+      <link href="css\normalize.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="css/main.css" />
+      <link rel="stylesheet" href="css/responsive.css" />
+      <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf=8" />
+      </head>
+       <body>
+          <h3>
+              Contact
+              <ul>
+                  <a href="index.html">About</a>
+                  <a href="about.html">Gallery</a>
+                  <a href="contact.html">Contact</a>
+              </ul>
+              </h3>
+      <br />
+      <br />
+           
+           <p>For more information, please contact me.</p>
+          <div id="image2">
+              <a href="img\Silhouette.jpg"></a>
+              <img src="img\Silhouette.jpg" style="max-width:100%;height:auto;">
+          </div>
+           <br />
+<div id="Contact page">
+    <br />
+    <br />
+         <h4>Send Message</h4>
+    <br />
+    <form action="MAILTO:mcmiorison@gmail.com" method="post" enctype="text/plain">
+        <p>
+            <label>Your Name</label><br />
+            <textarea id="text" name="Your_name" required></textarea>
+            <br />
+            <br />
+            <label>Your Email</label><br />
+            <textarea id="text" name="Your_email" required></textarea>
+            <br />
+            <br />
+            <label>Your Message</label><br />
+            <textarea id="message" name="your_message" required></textarea>
+            <br>
+            <br />
+            <button onclick="sendData()">Submit</button>
+            <input type="reset" name="reset" value="Clear" />
+    </form>
+                </div>
+          <footer>
+        <br>
+       <a href="http://facebook.com/TehyaMorison"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+      </footer>
+           <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+           <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+           <script>
+        $(document).ready(function(e) {
+            $(window).bind("contextmenu", function (e) {
+                e.preventDefault();
+                alert('Hey that belongs to Tehya!');
+            });
+        });
+           </script>
+         </body>
+</html>
