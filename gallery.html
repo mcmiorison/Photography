@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" ccontent="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="css\normalize.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/slider.js">Slider();</script>
+</head>
+<body onload="Slider();">
+    <div id="main-header">
+        <h1>
+            Gallery
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </ul>
+        </h1>
+    </div>
+    <div class="slider">
+        <img id="1" src="img/Sunflower black and white.jpg"  border="0" alt="Sunflower black and white"/>
+        <img id="2" src="img/Girl in summer.jpg" border="0" alt="Girl in summer"/>
+        <img id="3" src="img/Atlantic City.jpg" border="0" alt="Atlantic City"/>
+        <img id="4" src="img/Beauty up close.jpg" border ="0" alt="Beauty up close"/>
+        <img id="5" src="img/Laura in color.jpg" border="0" alt="Laura in color"/>
+    </div>
+   
+    <script>
+        $(document).ready(function(e) {
+            $(window).bind("contextmenu", function (e) {
+                e.preventDefault();
+                alert('Hey that belongs to Tehya!');
+            });
+        });
+    </script>
+</body>
+</html>

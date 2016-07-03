@@ -2,7 +2,7 @@
 //Solution use Node.js to perform the message look ups and server our template via HTTP
 
 //1. Create a web server
-<script>
+
 	document.addEventListener("keydown", function (e) {
 		if (e.which === 123) {
 			require('remote').getCurrentWindow().toggleDevTools();
@@ -10,4 +10,4 @@
 			location.reload();
 		}
 	});
-</script>
+
