@@ -15,4 +15,6 @@ function Slider() {
         }
     }, 6500);
 }
-        
+ 
+
+/*Gallery Slider*/
